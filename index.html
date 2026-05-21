@@ -26,6 +26,17 @@
     
 
     <main>
+        <section id="gamezone" class="gamezone">
+            <h2>Game Zone</h2>
+            <div class="gamezone-card">
+                <p>Open the game below and play it normally in the embedded frame.</p>
+                <button id="play-game-btn" type="button">Play Game</button>
+                <div id="game-frame-wrapper" class="game-frame-wrapper" hidden>
+                    <iframe src="https://html5.gamedistribution.com/13eabea86f7c4cd993a156258420e9ec/?gd_sdk_referrer_url=https://www.example.com/games/{game-path}" width="800" height="480" scrolling="none" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
         <section id="about">
             <h2>About Betting</h2>
             <button class="toggle-btn">Show/Hide About Betting</button>

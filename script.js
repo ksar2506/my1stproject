@@ -36,3 +36,13 @@ if (document.getElementById("bettingChart")) {
         }
     });
 }
+
+const playGameButton = document.getElementById("play-game-btn");
+const gameFrameWrapper = document.getElementById("game-frame-wrapper");
+
+if (playGameButton && gameFrameWrapper) {
+    playGameButton.addEventListener("click", () => {
+        gameFrameWrapper.hidden = false;
+        playGameButton.hidden = true;
+    });
+}
